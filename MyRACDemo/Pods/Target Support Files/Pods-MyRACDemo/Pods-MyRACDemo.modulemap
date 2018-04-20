@@ -1,0 +1,6 @@
+module Pods_MyRACDemo [system] {
+  umbrella header "Pods-MyRACDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

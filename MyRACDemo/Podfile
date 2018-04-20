@@ -1,0 +1,7 @@
+platform :ios, '9.0'
+
+target 'MyRACDemo' do
+
+  # Pods for MyRACDemo
+  pod 'ReactiveCocoa'
+end
