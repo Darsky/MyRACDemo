@@ -14,6 +14,12 @@
 
 @property (copy, nonatomic) NSString *demoName2;
 
+@property (weak, nonatomic) IBOutlet UITextField *field1;
+
+@property (weak, nonatomic) IBOutlet UITextField *field2;
+
+@property (weak, nonatomic) IBOutlet UIButton *stateButton;
+
 @end
 
 @implementation ViewController
@@ -35,6 +41,13 @@
      {
          NSLog(@"%@", x);
      }];
+    
+    RAC(self, stateButton.selected) = [RACSignal
+                                combineLatest:@[ RACObserve(self, field1.text), RACObserve(self, field2.text)]
+                                reduce:^(NSString *password, NSString *passwordConfirm)
+                                       {
+                                    return @([passwordConfirm isEqualToString:password]);
+                                }];
 }
 
 
