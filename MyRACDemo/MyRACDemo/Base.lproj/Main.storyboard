@@ -64,10 +64,21 @@
                                     <color key="titleColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aNk-y5-ivj">
+                                <rect key="frame" x="153" y="325" width="68" height="30"/>
+                                <state key="normal" title="Touch Me"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zvf-EH-TCp">
+                                <rect key="frame" x="160" y="385" width="54" height="30"/>
+                                <state key="normal" title="Login in"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="jcQ-xh-dA7" firstAttribute="centerY" secondItem="xlw-Ry-c7W" secondAttribute="centerY" id="381-EL-ZAB"/>
+                            <constraint firstItem="Zvf-EH-TCp" firstAttribute="top" secondItem="aNk-y5-ivj" secondAttribute="bottom" constant="30" id="4NW-xx-ZYo"/>
+                            <constraint firstItem="aNk-y5-ivj" firstAttribute="centerX" secondItem="Qld-ID-Dmh" secondAttribute="centerX" id="87l-Ab-0WO"/>
+                            <constraint firstItem="aNk-y5-ivj" firstAttribute="top" secondItem="Qld-ID-Dmh" secondAttribute="bottom" constant="30" id="9ws-yM-MOv"/>
                             <constraint firstItem="GrF-c0-YVu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="32" id="FBE-Oz-Ti9"/>
                             <constraint firstItem="Qld-ID-Dmh" firstAttribute="top" secondItem="dP6-4h-cxt" secondAttribute="bottom" constant="20" id="Flr-YJ-ixW"/>
                             <constraint firstItem="xlw-Ry-c7W" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="Ggj-tl-C0s"/>
@@ -81,13 +92,16 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yTy-o7-5Sk" secondAttribute="trailing" constant="40" id="hG2-It-BCh"/>
                             <constraint firstItem="yTy-o7-5Sk" firstAttribute="top" secondItem="xlw-Ry-c7W" secondAttribute="bottom" constant="30" id="sJo-Gv-Q7p"/>
                             <constraint firstItem="dP6-4h-cxt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="u0s-z0-066"/>
+                            <constraint firstItem="Zvf-EH-TCp" firstAttribute="centerX" secondItem="aNk-y5-ivj" secondAttribute="centerX" id="zsZ-gd-s3U"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="field1" destination="yTy-o7-5Sk" id="bdi-JE-3Xy"/>
                         <outlet property="field2" destination="dP6-4h-cxt" id="hkp-uo-ZTM"/>
+                        <outlet property="loginInButton" destination="Zvf-EH-TCp" id="oLh-DH-1dE"/>
                         <outlet property="stateButton" destination="Qld-ID-Dmh" id="a9i-pO-ehc"/>
+                        <outlet property="touchMeButton" destination="aNk-y5-ivj" id="46e-sH-Ifh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
